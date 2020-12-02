@@ -1,7 +1,27 @@
-.primerparrafo{
+.primerparrafo {
     text-align: center;
 }
-.segundoparrafo{
+
+.segundoparrafo {
     text-align: center;
-    
+    font-weight: bold;
+}
+
+.segundoparrafo,
+.tercerparrafo {
+    background-color: yellow;
+}
+
+.tercerparrafo {
+    text-align: center;
+    font-family: cursive;
+}
+
+textarea {
+    height: 50px;
+    width: 200px;
+}
+
+h3 {
+    color: orange;
 }
