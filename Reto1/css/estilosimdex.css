@@ -1,6 +1,7 @@
 div.encabezado {
     display: flex;
     flex-direction: row;
+    ;
 }
 
 .logo {
@@ -38,6 +39,7 @@ div.divmenuprincipal {
     height: 40px;
     margin: 0;
     padding-left: 0%;
+    background-color: white;
 }
 
 .limenuprincipal {
@@ -51,6 +53,24 @@ div.divmenuprincipal {
 .limenuprincipal:hover {
     background-color: black;
     color: white;
+}
+
+div.contenedorpplservicios {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorpplservicios>div {
+    width: 50%;
+}
+
+p {
+    font-size: larger;
+    text-align: center;
 }
 
 div.contenedorservicios {
