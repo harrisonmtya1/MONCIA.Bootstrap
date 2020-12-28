@@ -1,3 +1,8 @@
+body {
+    width: 80%;
+    margin: auto;
+}
+
 div.encabezado {
     display: flex;
     flex-direction: row;
@@ -87,7 +92,7 @@ div.contenedorservicios {
 }
 
 .imgservicio {
-    height: 160px;
+    height: 110px;
 }
 
 h3 {
