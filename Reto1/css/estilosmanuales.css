@@ -58,3 +58,25 @@ div.divmenuprincipal {
     background-color: black;
     color: white;
 }
+
+.banner{
+    width: 100%;
+    height: auto;
+}
+
+.botonmanuales{
+    border: none;
+    width: 100%;
+    text-align: left;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 2px;
+}
+
+.hide{
+    display: none;
+}
+
+
