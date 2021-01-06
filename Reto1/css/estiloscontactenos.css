@@ -69,6 +69,7 @@ div.divmenuprincipal {
 }
 
 .contactenos>div {
+    width: 50%;
     padding: 5px;
-    margin: 10px;
+    margin: 5px;
 }

@@ -48,7 +48,7 @@
     <div class="contenedorppal">
         <button onclick="mostrarocultar('honda')" class="botonmanuales" type="button" >Honda</button>
         <div id="honda" class="hide" >
-            <a class="itemmanual"><h5 style="margin: 2px;">Torando XR 250</h5></a>
+            <a href="manuales/MOTOR.PDF" class="itemmanual" download="XR250 Motor"><h5 style="margin: 2px;">Torando XR 250</h5></a>
             <a class="itemmanual"><h5 style="margin: 2px;">XR 650</h5></a>
             <a class="itemmanual"><h5 style="margin: 2px;">CBF 160</h5></a>
             <a class="itemmanual"><h5 style="margin: 2px;">XRE 300</h5></a>
@@ -63,7 +63,7 @@
         <button onclick="mostrarocultar('yamaha')" class="botonmanuales" type="button" >Yamaha</button>
         <div id="yamaha" class="hide">
             <a class="itemmanual"><h5 style="margin: 2px;">RX 100</h5></a>
-            <a class="itemmanual"><h5 style="margin: 2px;">XTZ 250</h5></a>
+            <a href="manuales/Manual de Servicio XTZ 250 Lander.pdf" class="itemmanual" download="XTZ 250"><h5 style="margin: 2px;">XTZ 250</h5></a>
             <a class="itemmanual"><h5 style="margin: 2px;">XTZ 125</h5></a>
             <a class="itemmanual"><h5 style="margin: 2px;">RX 115</h5></a>
         </div>
@@ -77,9 +77,9 @@
     function mostrarocultar(id){
       var divamotrar= document.getElementById(id);
       if(divamotrar.className.indexOf("show")== -1) {
-          divamotrar.className +="show";
+          divamotrar.className ="show";
       }else{
-        divamotrar.className= divamotrar.className.replace("show","")  
+        divamotrar.className= divamotrar.className.replace("show","hide")  
       }
 
     }
