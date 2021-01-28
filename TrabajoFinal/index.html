@@ -47,7 +47,7 @@
                     <a class="nav-link" href="manuales.html">Manuales</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="galeria.html">Galeria</a>
+                    <a class="nav-link" href="tiendavirtual.html">Tienda Virtual</a>
                 </li>
             </ul>
         </div>
@@ -98,8 +98,6 @@
     </div>
 
 
-    <br>
-
     <div class="jumbotron my-3 p-3 bg-dark text-secondary">
         <h1>Conoce Nuestros Servicios</h1>
     </div>
@@ -107,47 +105,53 @@
     <div class="container-fluid row">
         <div class="container col-lg-6">
             <div class="row ">
-                <div class="card col-md-4" style="height: 250px;">
+                <div class="card col-md-4" style="height: 200px;">
                     <div class="card-body">
-                        <h4 class="card-title">Repuestos</h3>
-                            <a class="btn bg-dark text-white">Cotizar</a>
+                        <a class="btn" onclick="mostrarservicio('repuestos')">
+                            <h3 class="card-title">Repuestos</h3>
+                        </a>
                     </div>
                     <img class="rounded" src="images/repuestos.jpg" style="width: 100%;">
                 </div>
-                <div class="card col-md-4" style="height: 250px;">
+                <div class="card col-md-4" style="height: 200px;">
                     <div class="card-body">
-                        <h4 class="card-title">Accesorios</h3>
-                            <a class="btn bg-dark text-white">Cotizar</a>
+                        <a class="btn" onclick="mostrarservicio('accesorios')">
+                            <h3 class="card-title">Accesorios</h3>
+                        </a>
                     </div>
                     <img class="rounded" src="images/accesorios.jpg" style="width: 100%;">
                 </div>
-                <div class="card col-md-4" style="height: 250px;">
+                <div class="card col-md-4" style="height: 200px;">
                     <div class="card-body">
-                        <h4 class="card-title">Lavado</h3>
-                            <a class="btn bg-dark text-white">Pedir Cita</a>
+                        <a class="btn" onclick="mostrarservicio('lavado')">
+                            <h3 class="card-title">Lavado</h3>
+                        </a>
                     </div>
                     <img class="rounded" src="images/lavado_moto3.jpg" style="width: 100%;">
                 </div>
             </div>
             <div class="row ">
-                <div class="card col-md-4" style="height: 250px;">
+                <div class="card col-md-4" style="height: 200px;">
                     <div class="card-body">
-                        <h4 class="card-title">Llantas</h3>
-                            <a class="btn bg-dark text-white">Cotizar</a>
+                        <a class="btn" onclick="mostrarservicio('llantas')">
+                            <h3 class="card-title">Llantas</h3>
+                        </a>
                     </div>
-                    <img class="rounded" src="images/llantas.jpg" style="width: 60%;">
+                    <img class="rounded" src="images/llantas.jpg" style="width: 70%;">
                 </div>
-                <div class="card col-md-4" style="height: 250px;">
+                <div class="card col-md-4" style="height: 200px;">
                     <div class="card-body">
-                        <h4 class="card-title">Reparacion</h3>
-                            <a class="btn bg-dark text-white">Cotizar</a>
+                        <a class="btn" onclick="mostrarservicio('reparacion')">
+                            <h3 class="card-title">Reparacion</h3>
+                        </a>
                     </div>
                     <img class="rounded" src="images/reparacion.jpg" style="width: 100%;">
                 </div>
-                <div class="card col-md-4" style="height: 250px;">
+                <div class="card col-md-4" style="height: 200px;">
                     <div class="card-body">
-                        <h4 class="card-title">Pintura</h3>
-                            <a class="btn bg-dark text-white">Cotizar</a>
+                        <a class="btn" onclick="mostrarservicio('pintura')">
+                            <h3 class="card-title">Pintura</h3>
+                        </a>
                     </div>
                     <img class="rounded" src="images/pintura.jpg" style="width: 100%;">
                 </div>
@@ -155,12 +159,71 @@
 
         </div>
         <div class="col-lg-6">
-            <div class="card">
-                <div class="card-body">
-                    <h3 class="card-title">Lavado</h3>
-                    <a class="btn bg-dark text-white">Pedir Cita</a>
+            <div style="display: block;" class="container servicio" id="repuestos">
+                <h3 class="bg-dark text-white">Repuestos</h3>
+                <div class="row" style="height: 200px;">
+                    <div class="col-md-6">
+                        <img src="images/repuestos.jpg " style="width: 100%;">
+                    </div>
+                    <div class="col-md-6">
+                        <p>Ofrecemos servicio de lavado para tu moto, excelente servicio y calidad</p>
+                    </div>
                 </div>
-                <img class="card-img-botton" src="images/repuestos.jpg">
+            </div>
+            <div style="display: none;" class="container servicio" id="accesorios">
+                <h3 class="bg-dark text-white">Accesorios</h3>
+                <div class="row" style="height: 200px;">
+                    <div class="col-md-6">
+                        <img src="images/accesorios.jpg " style="width: 100%;">
+                    </div>
+                    <div class="col-md-6">
+                        <p>Ofrecemos servicio de lavado para tu moto, excelente servicio y calidad</p>
+                    </div>
+                </div>
+            </div>
+            <div style="display: none;" class="container servicio" id="lavado">
+                <h3 class="bg-dark text-white">Lavado</h3>
+                <div class="row" style="height: 200px;">
+                    <div class="col-md-6">
+                        <img src="images/lavado_moto3.jpg " style="width: 100%;">
+                    </div>
+                    <div class="col-md-6">
+                        <p>Ofrecemos servicio de lavado para tu moto, excelente servicio y calidad</p>
+                    </div>
+                </div>
+            </div>
+            <div style="display: none;" class="container servicio" id="llantas">
+                <h3 class="bg-dark text-white">Llantas</h3>
+                <div class="row" style="height: 200px;">
+                    <div class="col-md-6">
+                        <img src="images/llantas.jpg " style="width: 60%;">
+                    </div>
+                    <div class="col-md-6">
+                        <p>Ofrecemos servicio de lavado para tu moto, excelente servicio y calidad</p>
+                    </div>
+                </div>
+            </div>
+            <div style="display: none;" class="container servicio" id="reparacion">
+                <h3 class="bg-dark text-white">Reparacion</h3>
+                <div class="row" style="height: 200px;">
+                    <div class="col-md-6">
+                        <img src="images/reparacion.jpg " style="width: 100%;">
+                    </div>
+                    <div class="col-md-6">
+                        <p>Ofrecemos servicio de lavado para tu moto, excelente servicio y calidad</p>
+                    </div>
+                </div>
+            </div>
+            <div style="display: none;" class="container servicio" id="pintura">
+                <h3 class="bg-dark text-white">Pintura</h3>
+                <div class="row" style="height: 200px;">
+                    <div class="col-md-6">
+                        <img src="images/pintura.jpg " style="width: 100%;">
+                    </div>
+                    <div class="col-md-6">
+                        <p>Ofrecemos servicio de lavado para tu moto, excelente servicio y calidad</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -174,6 +237,22 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="dist/js/bootstrap.js"></script>
+    <script>
+        function mostrarservicio(id) {
+            var servicios = document.getElementsByClassName("servicio");
+            var i = 0;
+            while (i < servicios.length) {
+                servicios[i].style.display = "none";
+                i += 1;
+            }
+
+            var servicio = document.getElementById(id);
+            if (servicio.style.display === "none") {
+                servicio.style.display = "block";
+
+            }
+        }
+    </script>
 </body>
 
 </html>
