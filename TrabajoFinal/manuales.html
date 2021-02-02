@@ -13,9 +13,21 @@
 </head>
 
 <body style="width: 80%; margin: auto;">
+    <div class="position-fixed bg-white d-flex flex-column border border-dark" style="width: 50px; z-index: 500; right: 10% ; top:200px;">
+        <a class="btn-dark" target="_blank" href="https://www.facebook.com/">
+            <div class="p-2"><i class="fab fa-facebook fa-2x"></i></div>
+        </a>
+        <a class="btn-dark" target="_blank" href="https://www.instagram.com/">
+            <div class="p-2 mx-auto"><i class="fab fa-instagram fa-2x"></i></div>
+        </a>
+        <a class="btn-dark" target="_blank" href="https://twitter.com/?lang=es">
+            <div class="p-2 mx-auto"><i class="fab fa-twitter fa-2x"></i></div>
+        </a>
+
+    </div>
 
     <a href="index.html" style="text-decoration: none;">
-        <div class="row">
+        <div class="container-fluid row m-0 p-0">
             <div class="col-sm-3 col-md-6 col-lg-3 text-center ">
                 <img src="images/logo.png" class="mx-auto d-block" style="width: 50%;">
 
@@ -58,10 +70,22 @@
         </form>
     </nav>
 
+    <div class="row container-fluid">
+        <div class="col-md-4">
+            <img src="images/manuales.PNG" class="img-fluid">
+        </div>
+        <div class="col-md-8 d-flex align-items-center justify-content-center">
+            <div>
+                <h2>Descarga gratis todos los Manuales de Taller !!</h2>
+            </div>
+
+        </div>
+    </div>
+
     <div id="accordion">
         <div class="card">
-            <div class="card-header">
-                <a class="card-link" data-toggle="collapse" href="#collapseHonda">Honda</a>
+            <div class="card-header bg-dark">
+                <a class="card-link text-white" data-toggle="collapse" href="#collapseHonda">Honda</a>
             </div>
             <div id="collapseHonda" class="collapse show" data-parent="#accordion">
                 <div class="card-body">
@@ -81,50 +105,63 @@
             </div>
         </div>
         <div class="card">
-            <div class="card-header">
-                <a class="card-link" data-toggle="collapse" href="#collapseAuteco">Auteco</a>
+            <div class="card-header bg-dark">
+                <a class="card-link text-white" data-toggle="collapse" href="#collapseAuteco">Auteco</a>
             </div>
             <div id="collapseAuteco" class="collapse show" data-parent="#accordion">
                 <div class="card-body">
-                    <a href="manuales/MOTOR.PDF" download="XR250 Motor">
-                        <h5 style="margin: 2px;">Torando XR 250</h5>
+                    <a class="itemmanual">
+                        <h5 style="margin: 2px;">Pulsar 180</h5>
                     </a>
-                    <a>
-                        <h5 style="margin: 2px;">XR 650</h5>
+                    <a class="itemmanual">
+                        <h5 style="margin: 2px;">Pursar NS 200</h5>
                     </a>
-                    <a>
-                        <h5 style="margin: 2px;">CBF 160</h5>
+                    <a class="itemmanual">
+                        <h5 style="margin: 2px;">Boxer CT 100</h5>
                     </a>
-                    <a>
-                        <h5 style="margin: 2px;">XRE 300</h5>
+                    <a class="itemmanual">
+                        <h5 style="margin: 2px;">Discovery 135</h5>
                     </a>
                 </div>
             </div>
         </div>
         <div class="card">
-            <div class="card-header">
-                <a class="card-link" data-toggle="collapse" href="#collapseYamaha">Yamaha</a>
+            <div class="card-header bg-dark">
+                <a class="card-link text-white" data-toggle="collapse" href="#collapseYamaha">Yamaha</a>
             </div>
             <div id="collapseYamaha" class="collapse show" data-parent="#accordion">
                 <div class="card-body">
-                    <a href="manuales/MOTOR.PDF" download="XR250 Motor">
-                        <h5 style="margin: 2px;">Torando XR 250</h5>
+                    <a class="itemmanual">
+                        <h5 style="margin: 2px;">RX 100</h5>
                     </a>
-                    <a>
-                        <h5 style="margin: 2px;">XR 650</h5>
+                    <a href="manuales/Manual de Servicio XTZ 250 Lander.pdf" class="itemmanual" download="XTZ 250">
+                        <h5 style="margin: 2px;">XTZ 250</h5>
                     </a>
-                    <a>
-                        <h5 style="margin: 2px;">CBF 160</h5>
+                    <a class="itemmanual">
+                        <h5 style="margin: 2px;">XTZ 125</h5>
                     </a>
-                    <a>
-                        <h5 style="margin: 2px;">XRE 300</h5>
+                    <a class="itemmanual">
+                        <h5 style="margin: 2px;">RX 115</h5>
                     </a>
                 </div>
             </div>
         </div>
     </div>
 
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">MonCia</a>
 
+
+
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-info" type="submit">Buscar</button>
+        </form>
+
+
+
+    </nav>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js">
     </script>

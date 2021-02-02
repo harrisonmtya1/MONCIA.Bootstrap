@@ -13,9 +13,21 @@
 </head>
 
 <body style="width: 80%; margin: auto;">
+    <div class="position-fixed bg-white d-flex flex-column border border-dark" style="width: 50px; z-index: 500; right: 10% ; top:390px;">
+        <a class="btn-dark" target="_blank" href="https://www.facebook.com/">
+            <div class="p-2"><i class="fab fa-facebook fa-2x"></i></div>
+        </a>
+        <a class="btn-dark" target="_blank" href="https://www.instagram.com/">
+            <div class="p-2 mx-auto"><i class="fab fa-instagram fa-2x"></i></div>
+        </a>
+        <a class="btn-dark" target="_blank" href="https://twitter.com/?lang=es">
+            <div class="p-2 mx-auto"><i class="fab fa-twitter fa-2x"></i></div>
+        </a>
+
+    </div>
 
     <a href="index.html" style="text-decoration: none;">
-        <div class="row">
+        <div class="container-fluid row m-0 p-0">
             <div class="col-sm-3 col-md-6 col-lg-3 text-center">
                 <img src="images/logo.png" class="mx-auto d-block" style="width: 50%;">
 
@@ -65,8 +77,8 @@
             <p>Somo una empresa fundada en el año 1991 en la ciudad de Envigado,<b>MonoCentro MonCia</b> se dedica a la venta de repuestos y accesorios para todo tipo de moto y para cualquier marca; tambien se realizan servicios de mecanica y electronica.
                 Se venden elementos de proteccion para los motociclistas, cacos, chaquetas, botas, etc</p>
         </div>
-        <div class="col-lg-3">
-            <img src="images/quienes somos.jpg">
+        <div class="col-lg-3 text-right">
+            <img src="images/quienes somos.jpg" class="img-fluid">
         </div>
 
     </div>
@@ -75,9 +87,20 @@
         <img src="images/quienes somosbanner.jpg" style="width: 100%;">
     </div>
 
-    <div class="jumbotron p-3" style="margin-bottom: 0;">
-        <h1>Bootstrap Tutorial</h1>
-    </div>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">MonCia</a>
+
+
+
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-info" type="submit">Buscar</button>
+        </form>
+
+
+
+    </nav>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js">
     </script>
